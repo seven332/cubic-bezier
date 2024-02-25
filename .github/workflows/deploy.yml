@@ -25,7 +25,7 @@ jobs:
           cache-dependency-path: pnpm-lock.yaml
 
       - run: pnpm install
-      - run: pnpm build
+      - run: pnpm build:github-pages
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
